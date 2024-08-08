@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProductCartView: View {
     // MARK: - Properties
+    @EnvironmentObject var vm: ViewModel
     let product: Product
     
     // MARK: - Body
@@ -21,8 +22,9 @@ struct ProductCartView: View {
                     if let url = URL(string: product.image) {
                         CartImageView(url: url, width: size.width, height: size.height)
                         
+                        // Favorite Button
                         Button {
-                            // Some action
+                            vm.toggleFavorite(product: product)
                         } label: {
                             Image(systemName: "heart.fill")
                                 .padding(10)
@@ -56,16 +58,5 @@ struct ProductCartView: View {
 // MARK: - Preview
 #Preview {
     MainView()
+        .environmentObject(ViewModel())
 }
-
-
-
-//ProductCartView(
-//    product: Product(
-//        name: "init",
-//        description: "init",
-//        image: "https://firebasestorage.googleapis.com/v0/b/onlineshop-2b337.appspot.com/o/products%2Fhat.webp?alt=media&token=12202ea5-e14d-467a-8a1f-df581bfe9837",
-//        price: 43,
-//        isFavorite: false
-//    )
-//)

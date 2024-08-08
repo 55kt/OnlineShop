@@ -10,6 +10,7 @@ import FirebaseFirestore
 
 struct MainView: View {
     // MARK: - Properties
+    @EnvironmentObject var vm: ViewModel
     @FirestoreQuery(collectionPath: "Shop") var items: [Product]
     var columns = Array(repeating: GridItem(), count: 2)
     
@@ -19,7 +20,10 @@ struct MainView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 LazyVGrid(columns: columns) {
                     ForEach(items) { item in
-                        ProductCartView(product: item)
+                        NavigationLink(destination: DetailView(product: item)) {
+                            ProductCartView(product: item)
+                        }
+                        .buttonStyle(.plain)
                     }
                 }
             }
@@ -55,4 +59,5 @@ struct MainView: View {
 // MARK: - Preview
 #Preview {
     MainView()
+        .environmentObject(ViewModel())
 }
