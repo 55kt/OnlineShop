@@ -47,6 +47,7 @@
 		4BF625C22C654E8C00FF77B9 /* DetailInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF625C12C654E8C00FF77B9 /* DetailInfoView.swift */; };
 		4BF625C42C66521000FF77B9 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF625C32C66520F00FF77B9 /* ProductRow.swift */; };
 		4BF625C62C66568900FF77B9 /* RemoteControlRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF625C52C66568900FF77B9 /* RemoteControlRowView.swift */; };
+		4BF625C82C665B4400FF77B9 /* CustomMainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF625C72C665B4400FF77B9 /* CustomMainButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +69,7 @@
 		4BF625C12C654E8C00FF77B9 /* DetailInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInfoView.swift; sourceTree = "<group>"; };
 		4BF625C32C66520F00FF77B9 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		4BF625C52C66568900FF77B9 /* RemoteControlRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlRowView.swift; sourceTree = "<group>"; };
+		4BF625C72C665B4400FF77B9 /* CustomMainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMainButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +286,7 @@
 			isa = PBXGroup;
 			children = (
 				4BF625BE2C654ABC00FF77B9 /* BackButtonView.swift */,
+				4BF625C72C665B4400FF77B9 /* CustomMainButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				4BF625C22C654E8C00FF77B9 /* DetailInfoView.swift in Sources */,
 				4BF6254D2C63D1B700FF77B9 /* MainView.swift in Sources */,
 				4BF625C62C66568900FF77B9 /* RemoteControlRowView.swift in Sources */,
+				4BF625C82C665B4400FF77B9 /* CustomMainButton.swift in Sources */,
 				4BF6254B2C63D1B700FF77B9 /* OnlineShopApp.swift in Sources */,
 				4BF625A52C64FFC400FF77B9 /* ProductCartView.swift in Sources */,
 				4BF625C42C66521000FF77B9 /* ProductRow.swift in Sources */,

@@ -3,12 +3,13 @@ import SwiftUI
 struct RemoteControlRowView: View {
     // MARK: - Properties
     let product: Product
+    @EnvironmentObject var vm: ViewModel
     
     // MARK: - Body
     var body: some View {
         VStack(alignment: .trailing, spacing: 25) {
             Button {
-                // Some action
+                vm.removeFromCart(product: product)
             } label: {
                 Image(systemName: "xmark.circle.fill")
                     .font(.title2)
@@ -17,7 +18,7 @@ struct RemoteControlRowView: View {
             
             HStack {
                 Button {
-                    // Some action
+                    vm.decreaseQuantity(product: product)
                 } label: {
                     Image(systemName: "minus.rectangle.fill")
                         .foregroundStyle(.primary)
@@ -31,7 +32,7 @@ struct RemoteControlRowView: View {
                 }
                 
                 Button {
-                    // Some action
+                    vm.increaseQuantity(product: product)
                 } label: {
                     Image(systemName: "plus.rectangle.fill")
                         .foregroundStyle(.primary)

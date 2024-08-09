@@ -9,6 +9,8 @@ import SwiftUI
 
 struct DetailView: View {
     // MARK: - Properties
+    
+    @EnvironmentObject var vm: ViewModel
     let product: Product
     
     // MARK: - Body
@@ -42,4 +44,5 @@ struct DetailView: View {
             isFavorite: false
         )
     )
+    .environmentObject(ViewModel())
 }
