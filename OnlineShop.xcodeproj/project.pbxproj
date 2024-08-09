@@ -48,6 +48,7 @@
 		4BF625C42C66521000FF77B9 /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF625C32C66520F00FF77B9 /* ProductRow.swift */; };
 		4BF625C62C66568900FF77B9 /* RemoteControlRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF625C52C66568900FF77B9 /* RemoteControlRowView.swift */; };
 		4BF625C82C665B4400FF77B9 /* CustomMainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF625C72C665B4400FF77B9 /* CustomMainButton.swift */; };
+		4BF625CA2C66632000FF77B9 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BF625C92C66632000FF77B9 /* CartButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		4BF625C32C66520F00FF77B9 /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		4BF625C52C66568900FF77B9 /* RemoteControlRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteControlRowView.swift; sourceTree = "<group>"; };
 		4BF625C72C665B4400FF77B9 /* CustomMainButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMainButton.swift; sourceTree = "<group>"; };
+		4BF625C92C66632000FF77B9 /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 			children = (
 				4BF625C32C66520F00FF77B9 /* ProductRow.swift */,
 				4BF625C52C66568900FF77B9 /* RemoteControlRowView.swift */,
+				4BF625C92C66632000FF77B9 /* CartButton.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BF625A92C650FDA00FF77B9 /* Extensions+text.swift in Sources */,
+				4BF625CA2C66632000FF77B9 /* CartButton.swift in Sources */,
 				4BF625B82C653D2000FF77B9 /* ViewModel.swift in Sources */,
 				4BF625A32C64FE1D00FF77B9 /* CartView.swift in Sources */,
 				4BF625BC2C65416D00FF77B9 /* DetailView.swift in Sources */,
