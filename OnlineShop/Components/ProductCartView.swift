@@ -1,10 +1,3 @@
-//
-//  ProductCartView.swift
-//  OnlineShop
-//
-//  Created by Vlad on 8/8/24.
-//
-
 import SwiftUI
 
 struct ProductCartView: View {

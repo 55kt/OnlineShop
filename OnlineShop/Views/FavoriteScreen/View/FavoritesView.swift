@@ -1,10 +1,3 @@
-//
-//  FavoritesView.swift
-//  OnlineShop
-//
-//  Created by Vlad on 8/8/24.
-//
-
 import SwiftUI
 import FirebaseFirestore
 

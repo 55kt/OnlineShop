@@ -1,16 +1,11 @@
-//
-//  BackButtonView.swift
-//  OnlineShop
-//
-//  Created by Vlad on 8/8/24.
-//
-
 import SwiftUI
 
 struct BackButtonView: View {
     
+    // MARK: - Properties
     @Environment(\.dismiss) var dismiss
     
+    // MARK: - Body
     var body: some View {
         Button {
             dismiss()
@@ -29,6 +24,8 @@ struct BackButtonView: View {
         }
     }
 }
+
+// MARK: - Preview
 #Preview {
     BackButtonView()
 }

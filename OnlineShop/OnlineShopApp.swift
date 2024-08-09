@@ -1,10 +1,3 @@
-//
-//  OnlineShopApp.swift
-//  OnlineShop
-//
-//  Created by Vlad on 7/8/24.
-//
-
 import SwiftUI
 import FirebaseCore
 

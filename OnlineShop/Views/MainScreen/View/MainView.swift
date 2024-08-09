@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  OnlineShop
-//
-//  Created by Vlad on 7/8/24.
-//
-
 import SwiftUI
 import FirebaseFirestore
 
@@ -36,9 +29,7 @@ struct MainView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     NavigationLink(destination: FavoritesView()) {
-                        Image(systemName: "heart.fill")
-                            .font(.title2)
-                            .imageScale(.large)
+                        FavoriteButton()
                     }
                     .buttonStyle(.plain)
                 }

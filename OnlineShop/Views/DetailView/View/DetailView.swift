@@ -1,28 +1,21 @@
-//
-//  DetailView.swift
-//  OnlineShop
-//
-//  Created by Vlad on 8/8/24.
-//
-
 import SwiftUI
 
 struct DetailView: View {
     // MARK: - Properties
-    
     @EnvironmentObject var vm: ViewModel
     let product: Product
+    let widthImage: CGFloat = UIScreen.main.bounds.width
+    let heightImage: CGFloat = UIScreen.main.bounds.height / 1.7
     
     // MARK: - Body
     var body: some View {
         ZStack(alignment: .topLeading) {
             VStack {
                 if let url = URL(string: product.image) {
-                    CartImageView(url: url, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 1.7)
+                    CartImageView(url: url, width: widthImage, height: heightImage)
                         .ignoresSafeArea()
                         .shadow(color: .black.opacity(0.3), radius: 10, x: 5, y: 8)
                 }
-                
                 DetailInfoView(product: product)
             }
             .background(.secondary.opacity(0.3))

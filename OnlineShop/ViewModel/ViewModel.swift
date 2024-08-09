@@ -15,6 +15,7 @@ final class ViewModel: ObservableObject {
         cartItems.reduce(0) {  $0 + ($1.price * ($1.quantityInCart ?? 0)) }
     }
     
+    // MARK: - Initializer
     init() {
         fetchItems()
     }

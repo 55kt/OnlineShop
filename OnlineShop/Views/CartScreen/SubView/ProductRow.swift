@@ -1,10 +1,3 @@
-//
-//  ProductRow.swift
-//  OnlineShop
-//
-//  Created by Vlad on 9/8/24.
-//
-
 import SwiftUI
 
 struct ProductRow: View {
